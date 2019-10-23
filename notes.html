@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>
+      Python Notes
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/note.ico" />
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous">
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="notes.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">Python</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false">
+                JUMP TO
+                <span class="caret">
+                </span>
+              </a>
+
+<!-- DROP DOWN MENU -->
+              <ul class="dropdown-menu">
+
+                <p><em><strong>-Level One</strong></em></p>
+
+                <li><a href="#numbers">Numbers</a></li>
+                <li><a href="#strings">Strings</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#dictionaries">Dictionaries</a></li>
+                <li><a href="#tu_set_boo">Tuples, Sets & Booleans</a></li>
+                <li><a href="#controlflow">Control Flow</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#scope">Scope</a></li>
+                <li><a href="#objectsA">Objects Part A</a></li>
+                <li><a href="#objectsB">Objects Part B</a></li>
+                <li><a href="#err_except">Errors & Exceptions</a></li>
+                <li><a href="#reg_exp">Regular Expressions</a></li>
+                <li><a href="#rep_syn">Repetition Syntax</a></li>
+                <li><a href="#modules">Modules & Package Imports</a></li>
+                <li><a href="#decorators">Decorators</a></li>
+                <li><a href="#name_main">Name & Main</a></li>
+
+                <li role="separator" class="divider"></li>
+                <li><a href="#">top</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="exercises.html">Exercises <span class="sr-only">(current)</span></a></li>
+              <li><a target="_blank" href="https://github.com/">github</a></li>
+              <li><a target="_blank" href="https://www.w3schools.com/">w3s</a></li>
+              <li><a target="_blank" href="https://stackoverflow.com/">StackOverflow</a></li>
+              <li><a target="_blank" href="https://developer.mozilla.org/">MDN</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- INTRO AND TABLE OF CONTENT -->
+    <div id="intro">
+      <h1>Table Of Contents:</h1>
+      <br>
+
+<!-- TABLE OF CONTENT -->
+      <div>
+        <h2>LEVEL ONE</h2>
+        <a class="content" href="#numbers"><p>NUMBERS</p></a>
+        <a class="content" href="#strings"><p>STRINGS</p></a>
+        <a class="content" href="#lists"><p>LISTS</p></a>
+        <a class="content" href="#dictionaries"><p>DICTIONARIES</p></a>
+        <a class="content" href="#tu_set_boo"><p>TUPLES, SETS, BOOLEANS</p></a>
+        <a class="content" href="#controlflow"><p>CONTROL FLOW</p></a>
+        <a class="content" href="#functions"><p>FUNCTIONS</p></a>
+        <h2>LEVEL TWO</h2>
+        <a class="content" href="#scope"><p>SCOPE</p></a>
+        <a class="content" href="#objectsA"><p>OBJECTS PART A</p></a>
+        <a class="content" href="#objectsB"><p>OBJECTS PART B</p></a>
+        <a class="content" href="#err_except"><p>ERRORS & EXCEPTIONS</p></a>
+        <a class="content" href="#reg_exp"><p>REGULAR EXPRESSIONS</p></a>
+        <a class="content" href="#rep_syn"><p>REPETITION SYNTAX</p></a>
+        <a class="content" href="#modules"><p>MODULES & PACKAGE IMPORTS</p></a>
+        <a class="content" href="#decorators"><p>DECORATORS</p></a>
+        <a class="content" href="#name_main"><p>NAME & MAIN</p></a>
+
+
+      </div><br>
+    </div>
+
+<!-- IMAGES -->
+      <div id="numbers">
+        <div class="thumbnail container">
+          <img src="image/numbers.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="strings">
+        <div class="thumbnail container">
+          <img src="image/strings1.png" alt="" width="100%">
+          <img src="image/strings2.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="lists">
+        <div class="thumbnail container">
+          <img src="image/lists1.png" alt="" width="100%">
+          <img src="image/lists2.png" alt="" width="100%">
+        </div>
+      <div id="dictionaries">
+        <div class="thumbnail container">
+          <img src="image/dictionaries.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="tu_set_boo">
+        <div class="thumbnail container">
+          <img src="image/tu_set_boo.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="controlflow">
+        <div class="thumbnail container">
+          <img src="image/controlflow1.png" alt="" width="100%">
+          <img src="image/controlflow2.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="functions">
+        <div class="thumbnail container">
+          <img src="image/functions1.png" alt="" width="100%">
+          <img src="image/functions2.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="scope">
+        <div class="thumbnail container">
+          <img src="image/scope1.png" alt="" width="100%">
+          <img src="image/scope2.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="objectsA">
+        <div class="thumbnail container">
+          <img src="image/objectsA1.png" alt="" width="100%">
+          <img src="image/objectsA2.png" alt="" width="100%">
+          <img src="image/objectsA3.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="objectsB">
+        <div class="thumbnail container">
+          <img src="image/objectsB1.png" alt="" width="100%">
+          <img src="image/objectsB2.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="err_except">
+        <div class="thumbnail container">
+          <img src="image/err_except1.png" alt="" width="100%">
+          <img src="image/err_except2.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="reg_exp">
+        <div class="thumbnail container">
+          <img src="image/reg_exp.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="rep_syn">
+        <div class="thumbnail container">
+          <img src="image/rep_syn1.png" alt="" width="100%">
+          <img src="image/rep_syn2.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="modules">
+        <div class="thumbnail container">
+          <img src="image/modules.png" alt="" width="100%">
+        </div>
+      </div>
+      <div id="decorators">
+        <div class="thumbnail container">
+          <img src="image/decorators1.png" alt="" width="100%">
+          <img src="image/decorators2.png" alt="" width="100%">
+          <img src="image/decorators3.png" alt="" width="100%">
+        </div>
+      </div>
+
+      <div id="name_main">
+        <div class="thumbnail container">
+          <img src="image/name_main.png" alt="" width="100%">
+        </div>
+      </div>
+
+    <div id="bottom"></div>
+    <script type="text/javascript"> // in-file scripts
+
+      // var newText = document.querySelector("h1")
+        // TO CHANGE COLOR OF TEXT
+        // newText.style.color = "lightblue";
+        // to change the text itself
+        // newText.textContent = "( BOTH .JS FILES ARE LINKED TO NOTES.HTML )"
+        // to add a strong tag inside h4
+        // newText.innerHTML = "<strong>( BOTH .JS FILES ARE LINKED TO NOTES.HTML )</strong>"
+
+    </script>
+    <script src="notes.js"></script>
+    <!-- <script src="test.js"></script> -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>
